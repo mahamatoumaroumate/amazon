@@ -1,0 +1,21 @@
+<svg width="320" height="100" viewBox="0 0 320 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .brand { font-family: 'Segoe UI', sans-serif; font-weight: bold; font-size: 36px; fill: #111; }
+    .highlight { fill: #FF9900; }
+    .underline {
+      fill: none;
+      stroke: #FF9900;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  </style>
+
+  <!-- Brand Name -->
+  <text x="20" y="60" class="brand">
+    Chad<tspan class="highlight">Amazon</tspan>
+  </text>
+
+  <!-- Subtle underline -->
+  <path class="underline" d="M95 65 C 130 80, 190 80, 240 65" />
+</svg>
