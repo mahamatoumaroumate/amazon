@@ -1,5 +1,4 @@
 import { APP_NAME } from "@/lib/constants"
-import Image from "next/image"
 import Link from "next/link"
 import { Menu } from "./menu"
 import { Search } from "./search"
@@ -26,14 +25,14 @@ export const Header = () => {
                 <Search/>
             </div>
         </div>
-        <div className="flex items-center px-3 mb-[1px] bg-gray-800">
-            <Button variant='ghost' className="header-button flex items-center gap-1 text-base [&_svg]:size-6">
+        <div className="flex items-center  px-3 mb-[2px] bg-gray-800">
+            <Button variant='ghost' className=" header-button flex items-center gap-1 text-base [&_svg]:size-6">
                 <MenuIcon/>
                 All
             </Button>
-            <div className="flex items-center flex-wrap gap-3 overflow-hidden max-h-[42px]">
+            <div className="flex items-center flex-wrap overflow-hidden max-h-[42px]  gap-3 ">
                 {data.headerMenu.map((menu)=>{
-                    return <Link href={menu.href} key={menu.href}>{menu.name}</Link>
+                    return <Link href={menu.href} className="pt-2 lg:pt-0" key={menu.href}>{menu.name}</Link>
                 })}
             </div>
         </div>
