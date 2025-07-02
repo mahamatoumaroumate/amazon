@@ -11,7 +11,7 @@ const Rating = ({rating=0,size=6}:{rating:number,size?:number}) => {
         {
             [...Array(fullStars)].map((_,i)=>(
                 <Star key={`full-${i}`} className='w-6 h-6 fill-yellow-400 text-yellow-400'/>
-
+ 
             ))
         }
         {partialStar > 0 && (

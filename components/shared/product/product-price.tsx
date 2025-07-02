@@ -8,6 +8,7 @@ const ProductPrice=({
     plain=false
 }:{price:number, isDeal?:boolean,listPrice?:number,className?:string,forListing?:boolean,plain?:boolean})=>{
     const discountPercent=Math.round(100 - (price/listPrice) * 100)
+    
     const stringValue=price.toString()
     const [intValue,floatValue]=stringValue.includes('.') ? stringValue.split('.'):[stringValue,'']
     return plain ? (formatCurrency(price)):listPrice==0? (<div className={cn('text-3xl',className)}>
